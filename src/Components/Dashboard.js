@@ -18,7 +18,7 @@ function Dashboard (){
       {
         label: '',
         fill: true,
-        lineTension: 0.1,
+        lineTension: 0.3,
         backgroundColor: '#edfce9',
         borderColor: '#017189',
         borderCapStyle: 'butt',
@@ -34,7 +34,7 @@ function Dashboard (){
         pointHoverBorderWidth: 5,
         pointRadius: 1,
         pointHitRadius: 10,
-        data: [4200, 3000, 3500, 3000, 2400, 3500, 3200],
+        data: [4600, 3000, 3500, 3000, 2400, 3500, 3200],
         showLine: true
       }
     ],
