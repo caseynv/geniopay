@@ -182,7 +182,7 @@ body{
 
 .user-panel-down{
   margin-top: 20px;
-  background-color: white;
+  background-color: #FFF5E9;
   border-radius: 8px;
   height: 200px;
 }
@@ -429,9 +429,6 @@ body{
   color: white;
 }
 
-.wh-body1{
-}
-
 .wallet-left-header{
   display: flex;
   justify-content: space-between;
@@ -443,9 +440,15 @@ body{
   height: 90px;
 }
 
+.new{
+  border: none;
+}
+
 .wh-body1{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .wh-header{
@@ -461,6 +464,26 @@ body{
 .wh-body{
   padding: 10px 20px 10px 0px;
 }
+
+.wh-right-active{
+  color: #22C55E;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+
+.wh-right-right{
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
 .wh-body-left-, .wh-body1{
   display: flex;
 }
@@ -473,12 +496,50 @@ body{
   margin-left: 15px;
 }
 
+.img-cap2 h6{
+  color: #001B21;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+
+}
+
+.highlight{
+  background-color: #EEF7F9;
+}
+
+.img-cap h6{
+  color: #001B21;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
 .wh-body1{
   height: 100px;
 }
 
 .wh-right-header, .wallet-ledger, .wallet-ledger1, .wallet-ledger2{
   display: flex;
+  justify-content: space-between;
+}
+
+.wallet-ledger1, .wallet-ledger2{
+  justify-content: space-between;
+}
+
+.wallet-ledger{
+  padding: 10px 0px 10px 0px;
+}
+
+.w1{
+  padding-right: 15px;
 }
 
 .wh-right-header{
@@ -487,6 +548,7 @@ body{
 }
 
 .wallet-btn{
+  padding: 20px 0px 10px 0px;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -509,4 +571,31 @@ body{
 
 .w-btn p{
   margin: auto;
+  padding: 0px;
 }
+
+.wh--h{
+  padding: 20px 0px 10px 0px;
+  color: #017189;
+}
+
+.wallet--chart--header, .wgraph-label--btn, .wgraph--btn1, 
+.wgraph--btn2, .wgraph--btn3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet--chart-filter{
+  color: #017189;
+  text-align: right;
+  padding: 20px 0px 0px 0px;
+}
+
+.wgraph--btn1, .wgraph--btn2, .wgraph--btn3{
+  align-items: center;
+}
+
+.wgraph--icon{
+  margin-right: 10px;
+}
+

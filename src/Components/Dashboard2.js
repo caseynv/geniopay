@@ -67,15 +67,15 @@ function Dashboard2(){
                 <div className="wallet row container-fluid">
                     <div className="wallet-left col-lg-6 col-md-6">
                         <div className="wallet-left-header">
-                            <div className="wh-left">
-                                <form className="form-inline ml-3 nav-form">
+                            <div className="">
+                                <form className="form-inline wh-left">
                                     <div className="input-group input-group-sm input-nav">
                                         <div className="input-group-append">
                                         <button className="btn btn-navbar" type="submit">
                                             <i className="fas fa-search" />
                                         </button>
                                         </div>
-                                        <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                                        <input className="form-control new form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
                                     </div>
                                 </form>
                             </div>
@@ -95,7 +95,7 @@ function Dashboard2(){
                             </div>
                         </div>
                         <div className="wh-body">
-                            <div className="wh-body1">
+                            <div className="wh-body1 highlight">
                                 <div className="wh-body-left">
                                     <div className="wh-body-left-">
                                         <img src={Image2} className="wh-pic" alt="image" />
@@ -150,10 +150,10 @@ function Dashboard2(){
                     <div className="wallet-right col-lg-6 col-md-10">
                         <div className='wh-right-header'>
                             <div className='wh-right-left'>
-                                <p>
-                                    <Icon icon="ci:dot-01-xs" width="25" color="green"/>
+                                <div className='wh-right-active'>
+                                    <Icon icon="ci:dot-01-xs" width="25" color="#22C55E"/>
                                     Active
-                                </p>
+                                </div>
                                 <h6>EUR Wallet</h6>
                                 <p>EUR</p>
                             </div>
@@ -163,7 +163,7 @@ function Dashboard2(){
                         </div>
                         <div className="wallet-ledger">
                             <div className="wallet-ledger1">
-                                <div className="wl">
+                                <div className="wl w1">
                                     <p>Ledger Balance</p>
                                     <p>Blocked Balance</p>
                                 </div>
@@ -173,7 +173,7 @@ function Dashboard2(){
                                 </div>
                             </div>
                             <div className="wallet-ledger2">
-                                <div className="wl1">
+                                <div className="wl1 w1">
                                     <p>Total Incoming</p>
                                     <p>Total Outgoing</p>
                                 </div>
@@ -199,43 +199,49 @@ function Dashboard2(){
                                 <p>Exchange</p>
                             </button>
                         </div>
-                        <div>More Options</div>
+                        <div className="wh--h">
+                            <p>
+                                More Options
+                                <Icon icon="ep:arrow-down" color="teal" />
+                            </p>
+                        </div>
                         <div className='wallet--chart--header'>
-                            <p>Activity</p>
-                            <p>transactions</p>
+                            <p className="putt">Activity</p>
+                            <p>Transactions</p>
                             <p>Invoices</p>
                         </div>
                         <div className='wallet--chart-filter'>
-                        Month
+                            <p>
+                                Month
+                                <Icon icon="ep:arrow-down" color="teal" />
+                            </p>
                         </div>
-                        <div>
-                            <div className='wgraph-label--btn'>
-                                <div className='wgraph--btn1'>
-                                <div className='wgraph--icon'>
+                        <div className='wgraph-label--btn'>
+                            <div className='wgraph--btn1'>
+                                <div className='icon wgraph--icon'>
                                     <Icon icon="bi:graph-up-arrow" />
                                 </div>
                                 <div className='wright-icon'>
                                     <h6>Total transactions</h6>
                                     <p>$88,600.00</p>
                                 </div>
-                                </div>
-                                <div className='wgraph--btn2'>
-                                <div className='wgraph--icon'>
+                            </div>
+                            <div className='wgraph--btn2'>
+                                <div className='icon wgraph--icon'>
                                     <Icon icon="fluent:arrow-down-left-48-regular" color="green" />
                                 </div>
                                 <div className='wright-icon'>
                                     <h6>Pay-In</h6>
                                     <p>$4,600.00</p>
                                 </div>
-                                </div>
-                                <div className='wgraph--btn3'>
-                                <div className='icon'>
+                            </div>
+                            <div className='wgraph--btn3'>
+                                <div className='icon wgraph--icon'>
                                     <Icon icon="carbon:arrow-up-right" color="red" />
                                 </div>
                                 <div className='wright-icon'>
                                     <h6>Pay-Out</h6>
                                     <p>$72,600.00</p>
-                                </div>
                                 </div>
                             </div>
                         </div>
