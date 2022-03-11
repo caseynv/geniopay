@@ -520,6 +520,9 @@ body{
   line-height: 24px;
   letter-spacing: 0em;
 }
+.wh-right-left p{
+  color: #017189;
+}
 
 .wh-body1{
   height: 100px;
@@ -545,6 +548,7 @@ body{
 .wh-right-header{
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px 10px 0px;
 }
 
 .wallet-btn{
