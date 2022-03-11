@@ -70,7 +70,7 @@ function Dashboard (){
               </div>{/* /.col */}
               <div className="col-sm-6">
                 <ol className="breadcrumb float-sm-right">
-                  <li className="breadcrumb-item"><a href="#">View all wallets</a></li>
+                  <li className="breadcrumb-item"><Link to="#">View all wallets</Link></li>
                 </ol>
               </div>{/* /.col */}
             </div>{/* /.row */}
@@ -187,13 +187,13 @@ function Dashboard (){
                     Activity
                   </p>
                   <div className='gheader--11'>
-                    <span><a href='#'> Month <Icon icon="ep:arrow-down" /></a> 
+                    <span><Link to='#'> Month <Icon icon="ep:arrow-down" /></Link> 
                     </span>
                   </div>
                 </div>
-                <a href='#' className='gheader--right '>
+                <Link to='#' className='gheader--right '>
                   View Transaction History
-                </a>
+                </Link>
 
               </div>
             </section>

@@ -8,10 +8,10 @@ function Menu(){
     <div>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
             {/* Brand Logo */}
-            <a href="index3.html" className="brand-link">
+            <Link to="index3.html" className="brand-link">
               <img src={Logo} alt="Geniopay Logo" className="logo-image" />
               
-            </a>
+            </Link>
             {/* Sidebar */}
             <div className="sidebar">
               {/* Sidebar user panel (optional) */}
@@ -55,12 +55,12 @@ function Menu(){
                   </li>
                   
                   <li className="nav-item item-menu">
-                    <a href="#" className="nav-link nav-item-active">
+                    <Link to="#" className="nav-link nav-item-active">
                       <Icon icon="ph:squares-four-fill" width='25' />
                       <p>
                         Dashboard
                       </p>
-                    </a>
+                    </Link>
                   </li>  
 
                   <li className="nav-item item-menu">
@@ -73,38 +73,38 @@ function Menu(){
                   </li>
 
                   <li className="nav-item item-menu">
-                    <a href="#" className="nav-link">
+                    <Link to="#" className="nav-link">
                       <Icon icon="bi:credit-card" width='25'/>
                       <p>Cards</p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item item-menu">
-                    <a href="#" className="nav-link">
+                    <Link to="#" className="nav-link">
                       <Icon icon="ri:money-dollar-box-line" width='25' />
                       <p>
                         FX Credit
                       </p>
-                    </a>
+                    </Link>
                     
                   </li>
 
                   <li className="nav-item item-menu">
-                    <a href="#" className="nav-link">
+                    <Link to="#" className="nav-link">
                       <Icon icon="fluent:people-28-regular" width="25" />
                       <p>
                         Beneficiaries
                       </p>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item has-treeview item-menu">
-                    <a href="#" className="nav-link">
+                    <Link to="#" className="nav-link">
                     <Icon icon="cil:tag" width="25" />
                       <p>
                         Perks
                         </p>
-                    </a>
+                    </Link>
                   </li>
                   
                   <li className='user-panel-down'>

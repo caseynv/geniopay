@@ -64,8 +64,8 @@ function Dashboard2(){
                         </button>
                     </div>
                 </div>
-                <div className="wallet row">
-                    <div className="wallet-left col-lg-5 col-md-6">
+                <div className="wallet row container-fluid">
+                    <div className="wallet-left col-lg-6 col-md-6">
                         <div className="wallet-left-header">
                             <div className="wh-left">
                                 <form className="form-inline ml-3 nav-form">
@@ -85,7 +85,7 @@ function Dashboard2(){
                         </div>
                         <div className="wh-header">
                             <div className="wh-header- putt">
-                            <p>Active (3)</p>
+                                <p>Active (3)</p>
                             </div>
                             <div className="wh-header-">
                                 <p>Inactive (2)</p>
@@ -98,59 +98,62 @@ function Dashboard2(){
                             <div className="wh-body1">
                                 <div className="wh-body-left">
                                     <div className="wh-body-left-">
-                                        <img src={Image2} alt="image" />
-                                        <div>
+                                        <img src={Image2} className="wh-pic" alt="image" />
+                                        <div className='img-cap'>
                                             <h6>EUR Wallet</h6>
                                             <p>EUR</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="wh-body-right">
-                                    <div>
+                                    <div className='img-cap2'>
                                         <h6>€2,000,000.50</h6>
                                         <p>Default</p>
                                     </div>
                                 </div>
                             </div>
-                        <div className="wh-body1">
-                            <div className="wh-body-left">
-                                <div className="wh-body-left-">
-                                    <img src={Image3} alt="image" />
-                                    <div>
-                                    <h6>Personal account</h6>
-                                    <p>USD</p>
+                            <div className="wh-body1">
+                                <div className="wh-body-left">
+                                    <div className="wh-body-left-">
+                                        <img src={Image3} className="wh-pic" alt="image" />
+                                        <div className='img-cap'>
+                                        <h6>Personal account</h6>
+                                        <p>USD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wh-body-right">
+                                    <div className='img-cap2'>
+                                        <h6>$10,250.00</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div className="wh-body-right">
-                                <div>
-                                    <h6>$10,250.00</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="wh-body1">
-                            <div className="wh-body-left">
-                                <div className="wh-body-left-">
-                                    <img src={Image1} alt="image" />
-                                    <div>
-                                    <h6>School savings</h6>
-                                    <p>GBP</p>
+                            <div className="wh-body1">
+                                <div className="wh-body-left">
+                                    <div className="wh-body-left-">
+                                        <img src={Image1} className="wh-pic" alt="image" />
+                                        <div className='img-cap'>
+                                            <h6>School savings</h6>
+                                            <p>GBP</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div className="wh-body-right">
+                                <div className='img-cap2'>
+                                    <h6>£500</h6>
+                                    <p>Default</p>
+                                </div>
+                                </div>
                             </div>
-                            <div className="wh-body-right">
-                            <div>
-                                <h6>£500</h6>
-                                <p>Default</p>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
-                    <div className="wallet-right col-lg-5 col-md-10">
+                    <div className="wallet-right col-lg-6 col-md-10">
                         <div className='wh-right-header'>
                             <div className='wh-right-left'>
-                                <p>. Active</p>
+                                <p>
+                                    <Icon icon="ci:dot-01-xs" width="25" color="green"/>
+                                    Active
+                                </p>
                                 <h6>EUR Wallet</h6>
                                 <p>EUR</p>
                             </div>
@@ -159,27 +162,42 @@ function Dashboard2(){
                             </div>
                         </div>
                         <div className="wallet-ledger">
-                            <div className="wl">
-                                <p>Ledger Balance</p>
-                                <p>€2,000,000.50</p>
+                            <div className="wallet-ledger1">
+                                <div className="wl">
+                                    <p>Ledger Balance</p>
+                                    <p>Blocked Balance</p>
+                                </div>
+                                <div className="wl">
+                                    <p>€2,000,000.50</p>
+                                    <p>€0.00</p>
+                                </div>
                             </div>
-                            <div className="wl">
-                                <p>Blocked Balance</p>
-                                <p>€0.00</p>
-                            </div>
-                            <div className="wl">
-                                <p>Total Incoming</p>
-                                <p>€2,000,000.50</p>
-                            </div>
-                            <div className="wl">
-                                <p>Total Outgoing</p>
-                                <p>€5,000,000.50</p>
+                            <div className="wallet-ledger2">
+                                <div className="wl1">
+                                    <p>Total Incoming</p>
+                                    <p>Total Outgoing</p>
+                                </div>
+                                <div className="wl1">
+                                    <p>€2,000,000.50</p>
+                                    <p>€5,000,000.50</p>
+                                </div>
                             </div>
                         </div>
                         <div className="wallet-btn">
-                            <button>Payment</button>
-                            <button>Pay In</button>
-                            <button>Exchange</button>
+                            <button className="w-btn">
+                            <div><Icon icon="carbon:send-alt" /></div>
+                                <p>Payment</p>
+                            </button>
+                            <button className="w-btn">
+                            <div><Icon icon="bi:arrow-down-left" /></div>
+                                <p>Pay In</p>
+                            </button>
+                            <button className="w-btn">
+                                <div>
+                                    <Icon icon="la:exchange-alt" />
+                                </div>
+                                <p>Exchange</p>
+                            </button>
                         </div>
                         <div>More Options</div>
                         <div className='wallet--chart--header'>
