@@ -4,7 +4,6 @@ import Image1 from '../Images/card--1.png';
 import Image2 from '../Images/card--2.png';
 import Image3 from '../Images/card--3.png';
 import { Line } from "react-chartjs-2";
-import { Link } from "react-router-dom";
 
 function Dashboard2(){
 
@@ -16,21 +15,21 @@ function Dashboard2(){
             fill: true,
             lineTension: 0.1,
             backgroundColor: '#edfce9',
-            borderColor: '#3DAA1D',
+            borderColor: '#017189',
             borderCapStyle: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: '#3DAA1D',
+            pointBorderColor: '#017189',
             pointBackgroundColor: '#fff',
             pointBorderWidth: 1,
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: '#3DAA1D',
+            pointHoverBackgroundColor: '#017189',
             pointHoverBorderColor: 'rgba(220,220,220,1)',
             pointHoverBorderWidth: 2,
             pointRadius: 1,
             pointHitRadius: 10,
-            data: [65, 59, 80, 81, 56, 55, 40],
+            data: [4200, 3000, 3500, 3000, 2400, 3500, 3200],
             showLine: true
           }
         ],
@@ -245,6 +244,11 @@ function Dashboard2(){
                                 </div>
                             </div>
                         </div>
+                        <section>
+                            <div className="chart">
+                                <Line data={lineData} />
+                            </div>
+                        </section>
                     </div>
                 </div>
 

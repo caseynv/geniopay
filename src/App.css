@@ -588,7 +588,7 @@ body{
 .wallet--chart-filter{
   color: #017189;
   text-align: right;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 15px 0px;
 }
 
 .wgraph--btn1, .wgraph--btn2, .wgraph--btn3{
