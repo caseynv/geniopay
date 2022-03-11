@@ -43,7 +43,7 @@ function Header() {
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link" data-toggle="dropdown" to="#">
-                            <img src={Admin} alt='Admin Image'/>
+                            <img src={Admin} alt='Admin'/>
                             </Link>
                             <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                             <Link to="#" className="dropdown-item">

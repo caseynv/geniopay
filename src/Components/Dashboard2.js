@@ -97,7 +97,7 @@ function Dashboard2(){
                             <div className="wh-body1 highlight">
                                 <div className="wh-body-left">
                                     <div className="wh-body-left-">
-                                        <img src={Image2} className="wh-pic" alt="image" />
+                                        <img src={Image2} className="wh-pic" alt="flag" />
                                         <div className='img-cap'>
                                             <h6>EUR Wallet</h6>
                                             <p>EUR</p>
@@ -114,7 +114,7 @@ function Dashboard2(){
                             <div className="wh-body1">
                                 <div className="wh-body-left">
                                     <div className="wh-body-left-">
-                                        <img src={Image3} className="wh-pic" alt="image" />
+                                        <img src={Image3} className="wh-pic" alt="flag2" />
                                         <div className='img-cap'>
                                         <h6>Personal account</h6>
                                         <p>USD</p>
@@ -130,7 +130,7 @@ function Dashboard2(){
                             <div className="wh-body1">
                                 <div className="wh-body-left">
                                     <div className="wh-body-left-">
-                                        <img src={Image1} className="wh-pic" alt="image" />
+                                        <img src={Image1} className="wh-pic" alt="flag3" />
                                         <div className='img-cap'>
                                             <h6>School savings</h6>
                                             <p>GBP</p>

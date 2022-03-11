@@ -6,7 +6,7 @@ import Image3 from '../Images/card--3.png';
 import { Line } from "react-chartjs-2";
 import { Link } from "react-router-dom";
 
-import Chart from 'chart.js/auto';
+import 'chart.js/auto';
 
 
 
